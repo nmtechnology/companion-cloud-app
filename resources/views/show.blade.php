@@ -33,7 +33,7 @@
 
                     </div>
 
-                    <a class="btn btn-primary" href="{{ route('user.orders') }}">Back to Orders</a>
+                    <a class="btn btn-primary" href="{{ route('user.orders') }}">Back</a>
 
                 </div> <!-- end panel-body -->
             </div> <!-- end panel -->

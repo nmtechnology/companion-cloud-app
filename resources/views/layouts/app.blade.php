@@ -41,7 +41,7 @@
                             <li><a href="{{ route('user.orders') }}">Active Companions</a></li>
 
                             {{-- Admin Routes --}}
-                            <li><a href="{{ route('admin.orders') }}">ADMIN</a></li>
+                            <li><a href="{{ route('admin.orders') }}">Messaging Center</a></li>
                         @endauth
                     </ul>
 
