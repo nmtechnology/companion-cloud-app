@@ -53,7 +53,7 @@ template {
 }
 
 a {
-  background-color: transparent;
+  color: transparent;
 }
 
 a:active,
@@ -83,7 +83,6 @@ h1 {
 }
 
 mark {
-  background: #ff0;
   color: #000;
 }
 
@@ -234,10 +233,10 @@ th {
   *,
   *:before,
   *:after {
-    color: #000 !important;
-    text-shadow: none !important;
-    background: transparent !important;
-    box-shadow: none !important;
+    color: #000 ;
+    text-shadow: none ;
+    background: transparent;
+    box-shadow: none ;
   }
 
   a,
@@ -274,7 +273,7 @@ th {
   }
 
   img {
-    max-width: 100% !important;
+    max-width: 100% ;
   }
 
   p,
@@ -295,7 +294,7 @@ th {
 
   .btn > .caret,
   .dropup > .btn > .caret {
-    border-top-color: #000 !important;
+    border-top-color: #000 ;
   }
 
   .label {
@@ -303,17 +302,17 @@ th {
   }
 
   .table {
-    border-collapse: collapse !important;
+    border-collapse: collapse ;
   }
 
   .table td,
   .table th {
-    background-color: #fff !important;
+    background-color: #ffffff;
   }
 
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid #ddd !important;
+    border: 1px solid #ddd;
   }
 }
 
@@ -1403,7 +1402,7 @@ body {
   font-size: 14px;
   line-height: 1.6;
   color: #636b6f;
-  background-color: #f5f8fa;
+  background-color: #4499d4;
 }
 
 input,
@@ -5253,10 +5252,10 @@ tbody.collapse.in {
   }
 
   .navbar-collapse.collapse {
-    display: block !important;
-    height: auto !important;
+    display: block ;
+    height: auto ;
     padding-bottom: 0;
-    overflow: visible !important;
+    overflow: visible ;
   }
 
   .navbar-collapse.in {
@@ -5588,11 +5587,11 @@ tbody.collapse.in {
 
 @media (min-width: 768px) {
   .navbar-left {
-    float: left !important;
+    float: left ;
   }
 
   .navbar-right {
-    float: right !important;
+    float: right ;
     margin-right: -15px;
   }
 
@@ -7950,19 +7949,19 @@ button.close {
 }
 
 .pull-right {
-  float: right !important;
+  float: right ;
 }
 
 .pull-left {
-  float: left !important;
+  float: left ;
 }
 
 .hide {
-  display: none !important;
+  display: none ;
 }
 
 .show {
-  display: block !important;
+  display: block;
 }
 
 .invisible {
@@ -7978,7 +7977,7 @@ button.close {
 }
 
 .hidden {
-  display: none !important;
+  display: none ;
 }
 
 .affix {
@@ -7990,19 +7989,19 @@ button.close {
 }
 
 .visible-xs {
-  display: none !important;
+  display: none ;
 }
 
 .visible-sm {
-  display: none !important;
+  display: none ;
 }
 
 .visible-md {
-  display: none !important;
+  display: none ;
 }
 
 .visible-lg {
-  display: none !important;
+  display: none;
 }
 
 .visible-xs-block,
@@ -8017,237 +8016,237 @@ button.close {
 .visible-lg-block,
 .visible-lg-inline,
 .visible-lg-inline-block {
-  display: none !important;
+  display: none;
 }
 
 @media (max-width: 767px) {
   .visible-xs {
-    display: block !important;
+    display: block;
   }
 
   table.visible-xs {
-    display: table !important;
+    display: table;
   }
 
   tr.visible-xs {
-    display: table-row !important;
+    display: table-row;
   }
 
   th.visible-xs,
   td.visible-xs {
-    display: table-cell !important;
+    display: table-cell;
   }
 }
 
 @media (max-width: 767px) {
   .visible-xs-block {
-    display: block !important;
+    display: block;
   }
 }
 
 @media (max-width: 767px) {
   .visible-xs-inline {
-    display: inline !important;
+    display: inline;
   }
 }
 
 @media (max-width: 767px) {
   .visible-xs-inline-block {
-    display: inline-block !important;
+    display: inline-block;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .visible-sm {
-    display: block !important;
+    display: block;
   }
 
   table.visible-sm {
-    display: table !important;
+    display: table;
   }
 
   tr.visible-sm {
-    display: table-row !important;
+    display: table-row;
   }
 
   th.visible-sm,
   td.visible-sm {
-    display: table-cell !important;
+    display: table-cell;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .visible-sm-block {
-    display: block !important;
+    display: block;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .visible-sm-inline {
-    display: inline !important;
+    display: inline;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .visible-sm-inline-block {
-    display: inline-block !important;
+    display: inline-block;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .visible-md {
-    display: block !important;
+    display: block;
   }
 
   table.visible-md {
-    display: table !important;
+    display: table;
   }
 
   tr.visible-md {
-    display: table-row !important;
+    display: table-row;
   }
 
   th.visible-md,
   td.visible-md {
-    display: table-cell !important;
+    display: table-cell;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .visible-md-block {
-    display: block !important;
+    display: block;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .visible-md-inline {
-    display: inline !important;
+    display: inline;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .visible-md-inline-block {
-    display: inline-block !important;
+    display: inline-block;
   }
 }
 
 @media (min-width: 1200px) {
   .visible-lg {
-    display: block !important;
+    display: block ;
   }
 
   table.visible-lg {
-    display: table !important;
+    display: table;
   }
 
   tr.visible-lg {
-    display: table-row !important;
+    display: table-row;
   }
 
   th.visible-lg,
   td.visible-lg {
-    display: table-cell !important;
+    display: table-cell;
   }
 }
 
 @media (min-width: 1200px) {
   .visible-lg-block {
-    display: block !important;
+    display: block;
   }
 }
 
 @media (min-width: 1200px) {
   .visible-lg-inline {
-    display: inline !important;
+    display: inline;
   }
 }
 
 @media (min-width: 1200px) {
   .visible-lg-inline-block {
-    display: inline-block !important;
+    display: inline-block;
   }
 }
 
 @media (max-width: 767px) {
   .hidden-xs {
-    display: none !important;
+    display: none;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .hidden-sm {
-    display: none !important;
+    display: none;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .hidden-md {
-    display: none !important;
+    display: none;
   }
 }
 
 @media (min-width: 1200px) {
   .hidden-lg {
-    display: none !important;
+    display: none;
   }
 }
 
 .visible-print {
-  display: none !important;
+  display: none;
 }
 
 @media print {
   .visible-print {
-    display: block !important;
+    display: block;
   }
 
   table.visible-print {
-    display: table !important;
+    display: table;
   }
 
   tr.visible-print {
-    display: table-row !important;
+    display: table-row;
   }
 
   th.visible-print,
   td.visible-print {
-    display: table-cell !important;
+    display: table-cell;
   }
 }
 
 .visible-print-block {
-  display: none !important;
+  display: none;
 }
 
 @media print {
   .visible-print-block {
-    display: block !important;
+    display: block;
   }
 }
 
 .visible-print-inline {
-  display: none !important;
+  display: none;
 }
 
 @media print {
   .visible-print-inline {
-    display: inline !important;
+    display: inline;
   }
 }
 
 .visible-print-inline-block {
-  display: none !important;
+  display: none;
 }
 
 @media print {
   .visible-print-inline-block {
-    display: inline-block !important;
+    display: inline-block ;
   }
 }
 
 @media print {
   .hidden-print {
-    display: none !important;
+    display: none ;
   }
 }
 
@@ -8283,7 +8282,7 @@ button.close {
 }
 
 .dropdown-menu-notifications .see-all-notifications a {
-  color: #333 !important;
+  color: #333;
 }
 
 .navbar-brand {

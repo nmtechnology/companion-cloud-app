@@ -30,7 +30,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        {{ config('app.name', 'CompanionCloud') }}
                     </a>
                 </div>
 
@@ -38,8 +38,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                         @auth
-                            <li><a href="{{ route('user.orders') }}">My Orders</a></li>
-                            <li><a href="{{ route('user.orders.create') }}">Order Pizza</a></li>
+                            <li><a href="{{ route('user.orders') }}">Active Companions</a></li>
 
                             {{-- Admin Routes --}}
                             <li><a href="{{ route('admin.orders') }}">ADMIN</a></li>
