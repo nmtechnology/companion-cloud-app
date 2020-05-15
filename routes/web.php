@@ -17,10 +17,13 @@ Auth::routes();
 // User Routes
 Route::middleware('auth')->group(function () {
     Route::get('/orders', 'UserOrdersController@index')->name('user.orders');
-    Route::get('/orders/create', 'UserOrdersController@create')->name('user.orders.create');
+    Route::get('/orders/create', 'UserOrdersController@create','QRController@make')->name('user.orders.create');
     Route::post('/orders', 'UserOrdersController@store')->name('user.orders.store');
     Route::get('/orders/{order}', 'UserOrdersController@show')->name('user.orders.show');
 });
+
+Route::get('/qr-code', 'QRController@make');
+
 
 // Admin Routes - Make sure you implement an auth layer here
 Route::prefix('admin')->group(function () {

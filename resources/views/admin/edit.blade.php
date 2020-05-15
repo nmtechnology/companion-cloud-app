@@ -76,6 +76,7 @@
                                 <div class="controls col-lg-8">
                                     <div class="form-actions">
                                         <button type="submit" id="update-order" class="btn btn-success">Update Status</button>
+                                        <button type="button" id="update-order" class="btn btn-danger">Delete</button>
                                     </div> <!-- /form-actions -->
                                 </div>
                             </div>

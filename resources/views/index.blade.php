@@ -6,7 +6,7 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Active Companion Panel
-                <a class="btn btn-success" href="{{ route('user.orders.create') }}">Add Companion</a></div>
+                <a class="btn btn-success col-lg-offset-9" href="{{ route('user.orders.create') }}">Add Companion</a></div>
 
                 <div class="panel-body container-fluid">
                     @if (session('message'))

@@ -2045,7 +2045,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -43053,13 +43052,9 @@ var render = function() {
     ),
     _vm._v(" "),
     _c("div", { staticClass: "order-status" }, [
-      _c("strong", [_vm._v("Order Status:")]),
+      _c("strong", [_vm._v("Order Is Currently:")]),
       _vm._v(" " + _vm._s(_vm.statusNew) + "\n    ")
-    ]),
-    _vm._v(" "),
-    _vm.progress >= 100
-      ? _c("img", { attrs: { src: "/img/delivery.gif", alt: "delivery" } })
-      : _vm._e()
+    ])
   ])
 }
 var staticRenderFns = []
@@ -64870,8 +64865,8 @@ if (token) {
 window.Pusher = __webpack_require__(/*! pusher-js */ "./node_modules/pusher-js/dist/web/pusher.js");
 window.Echo = new laravel_echo__WEBPACK_IMPORTED_MODULE_0__["default"]({
   broadcaster: 'pusher',
-  key: 'b9bfc637fbe77a80cf05',
-  cluster: 'us2',
+  key: 'c71cd502743941deb33f',
+  cluster: 'us3',
   encrypted: true
 });
 
@@ -65084,26 +65079,14 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/assets/sass/app.scss":
-/*!****************************************!*\
-  !*** ./resources/assets/sass/app.scss ***!
-  \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ 0:
-/*!***************************************************************************!*\
-  !*** multi ./resources/assets/js/app.js ./resources/assets/sass/app.scss ***!
-  \***************************************************************************/
+/*!******************************************!*\
+  !*** multi ./resources/assets/js/app.js ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/ddc/Desktop/NMTechnology/laravel-realtime-example/resources/assets/js/app.js */"./resources/assets/js/app.js");
-module.exports = __webpack_require__(/*! /Users/ddc/Desktop/NMTechnology/laravel-realtime-example/resources/assets/sass/app.scss */"./resources/assets/sass/app.scss");
+module.exports = __webpack_require__(/*! /Users/ddc/Desktop/NMTechnology/laravel-realtime-example/resources/assets/js/app.js */"./resources/assets/js/app.js");
 
 
 /***/ })

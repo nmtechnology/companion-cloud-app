@@ -5,7 +5,7 @@
         </div>
 
         <div class="order-status">
-            <strong>Order Status:</strong> {{ statusNew }}
+            <strong>Order Is Currently:</strong> {{ statusNew }}
         </div>
 
     </div>

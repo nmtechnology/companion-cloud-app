@@ -39,19 +39,28 @@ class UserOrdersController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'address' => 'required',
-            'size' => 'required',
+            'cremation_type' => 'required',
+            'extra_notes' => 'required',
         ]);
 
         $order = Order::create([
             'user_id' => auth()->user()->id,
-            'address' => $request->address,
-            'size' => $request->size,
-            'toppings' => implode(', ', $request->toppings),
-            'instructions' => $request->instructions,
+            'owner_name' => $request->owner_name,
+            'owner_phone' => $request->owner_phone,
+			  	'pet_name' => $request->pet_name,
+			   'color_breed' => $request->color_breed,
+			   'weight' => $request->weight,
+			   'return_to' => $request->return_to,
+			   'shipping_address' => $request->shipping_address,
+			   'cremation_type' => $request->cremation_type,
+			   'paw_print' => $request->paw_print,
+			   'urn_type' => $request->urn_type,
+			   'nameplate_type' => $request->nameplate_type,
+            'service_options' => implode(', ', $request->service_options),
+            'extra_notes' => $request->extra_notes,
         ]);
 
-        return redirect()->route('user.orders.show', $order)->with('message', 'Order received!');
+        return redirect()->route('user.orders.show', $order)->with('message', 'Your Companion Was Submitted To APMS!');
     }
 
     /**
@@ -64,4 +73,11 @@ class UserOrdersController extends Controller
     {
         return view('show', compact('order'));
     }
+
+
+public function delete(Order $order)
+	{
+		return redirect()->route('user.orders.show', $order)->with('message', 'Companion Was Deleted!');
+	}
 }
+
