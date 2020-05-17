@@ -13,8 +13,6 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-image: url("/img/companioncloud-background.jpg");
-                background-size: inherit;
                 color: #444444;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
