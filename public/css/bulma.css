@@ -22,6 +22,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .delete, .modal-close, .is-unselectable, .button, .file, .breadcrumb, .pagination-previous,
@@ -6433,7 +6434,7 @@ a.list-item {
 }
 
 .navbar.is-white {
-  background-color: white;
+  background-color: #c24d4d;
   color: #0a0a0a;
 }
 

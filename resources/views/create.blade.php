@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+    <br>
+    <br>
+    <br>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -35,6 +38,26 @@
 
                                 <div class="form-group"><label class="col-sm-2 control-label">Color & Breed</label>
                                     <div class="col-sm-3"><input type="text" name="color_breed" placeholder="Black Pug" class="form-control"></div>
+                                </div>
+
+                                <div class="form-group"><label class="col-sm-2 control-label">Weight</label>
+                                    <div class="col-sm-6"><input type="text" name="weight" placeholder="12 lbs." class="form-control"></div>
+                                </div>
+
+                                <div class="form-group"><label class="col-sm-2 control-label">Weight</label>
+                                    <div class="col-sm-6"><input type="text" name="weight" placeholder="12 lbs." class="form-control"></div>
+                                </div>
+
+                                <div class="form-group"><label class="col-sm-2 control-label">Weight</label>
+                                    <div class="col-sm-6"><input type="text" name="weight" placeholder="12 lbs." class="form-control"></div>
+                                </div>
+
+                                <div class="form-group"><label class="col-sm-2 control-label">Weight</label>
+                                    <div class="col-sm-6"><input type="text" name="weight" placeholder="12 lbs." class="form-control"></div>
+                                </div>
+
+                                <div class="form-group"><label class="col-sm-2 control-label">Weight</label>
+                                    <div class="col-sm-6"><input type="text" name="weight" placeholder="12 lbs." class="form-control"></div>
                                 </div>
 
                                 <div class="form-group"><label class="col-sm-2 control-label">Weight</label>

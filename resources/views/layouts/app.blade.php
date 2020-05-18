@@ -16,10 +16,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
-<body>
+<body class="has-navbar-fixed-top">
     <div id="app">
 
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+        <nav class="navbar is-fixed-top" id="nav-nav" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="https://bulma.io">
                     <img src="https://imagesharing.com/uploads/20200518/ccc9ccad5ab9aee46a8696793b4fbc317a3ed564.png" width="195" height="105">
@@ -33,7 +33,7 @@
                         <a href="#" class="navbar-link" aria-haspopup="true" aria-controls="dropdown-menu3" hidden="true">
                             {{ Auth::user()->name }} </a>
 
-                        <div class="navbar-dropdown">
+                        <div class="navbar-dropdown navbar-end">
 
                                 @guest
                                     <a href="{{ route('login') }}" class="dropdown-item">
@@ -59,12 +59,9 @@
                                         </form>
                                         @endguest
                                     </a>
-                                    </a>
                         </div>
                         @endauth
-                        </div>
                     </div>
-                </div>
         </nav>
 
 
