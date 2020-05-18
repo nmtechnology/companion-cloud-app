@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
-<body class="has-navbar-fixed-top">
+<body>
     <div id="app">
 
         <nav class="navbar is-fixed-top" id="nav-nav" role="navigation" aria-label="main navigation">
@@ -29,11 +29,11 @@
             </div>
             @auth
 
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a href="#" class="navbar-link" aria-haspopup="true" aria-controls="dropdown-menu3" hidden="true">
+                    <div class="navbar-item has-dropdown is-hoverable navbar-end">
+                        <a href="#" class="navbar-link" aria-haspopup="true" hidden="true">
                             {{ Auth::user()->name }} </a>
 
-                        <div class="navbar-dropdown navbar-end">
+                        <div class="navbar-dropdown">
 
                                 @guest
                                     <a href="{{ route('login') }}" class="dropdown-item">

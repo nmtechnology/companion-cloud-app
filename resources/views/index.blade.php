@@ -8,10 +8,10 @@
         <br>
         <div class="column">
             <div class="panel is-primary">
-                <div class="panel-heading is-large text-primary">Active Companion Panel
-                <a class="button is-warning" href="{{ route('user.orders.create') }}"><i class="fas fa-plus"></i>Add Companion</a></div>
+                <div class="panel-heading is-large text-primary column">Active Companion Panel
+                <a class="button is-warning" href="{{ route('user.orders.create') }}"><i class="fas fa-plus"></i>Add</a></div>
 
-                <div class="panel-block">
+                <div class="panel-block is-success">
                     @if (session('message'))
                         <div class="alert alert-success">
                             {{ session('message') }}
@@ -19,8 +19,8 @@
                     @endif
 
                 @if ($orders->count() == 0)
-                    <p class="has-text-white">No orders yet.</p>
-                    <a class="button is-warning text-primary" href="{{ route('user.orders.create') }}">Add Companion</a>
+                    <p class="has-text-white">No orders yet...</p>
+                            <a class="button is-warning" href="{{ route('user.orders.create') }}"><i class="fas fa-plus"></i>Add</a></div>
 
                 @else
 
