@@ -11,78 +11,18 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
-        <style>
-            html, body {
-                background-image: url("https://imagesharing.com//photo.php?s=zsh1753v");
-                background-size: cover;
-                color: #444444;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+        <link href="{{ asset('css/bulma.css') }}" rel="stylesheet">
 
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links {
-                margin-bottom: 30px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-
-            .hero-image {
-                margin: auto;
-                max-width: 40%;
-            }
-        </style>
     </head>
-    <body src="https://imagesharing.com//photo.php?s=zsh1753v">
-        <div class="flex-center position-ref full-height">
+    <body>
+        <div class="flex-center position-ref full-height column">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/orders') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
+                        <a class="button is-primary" href="{{ route('login') }}">Login</a>
+                        <a class="button is-warning" href="{{ route('register') }}">Register</a>
                     @endauth
                 </div>
             @endif

@@ -6,10 +6,10 @@
         <br>
         <br>
         <br>
-        <div class="col-md-12">
+        <div class="col-lg-3">
             <div class="panel panel-default">
-                <div class="panel-heading">Active Companion Panel
-                <a class="btn btn-success col-lg-offset-9" href="{{ route('user.orders.create') }}">Add Companion</a></div>
+                <div class="panel-heading is-large text-primary">Active Companion Panel
+                <a class="button is-primary col-lg-offset-1" href="{{ route('user.orders.create') }}">Add Companion</a></div>
 
                 <div class="panel-body container-fluid">
                     @if (session('message'))
@@ -20,7 +20,7 @@
 
                 @if ($orders->count() == 0)
                     <p>No orders yet.</p>
-                    <a class="btn btn-success" href="{{ route('user.orders.create') }}">Add Companion</a>
+                    <a class="button is-primary text-primary" href="{{ route('user.orders.create') }}">Add Companion</a>
 
                 @else
 

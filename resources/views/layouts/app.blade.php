@@ -22,116 +22,53 @@
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="https://bulma.io">
-                    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                    <img src="https://imagesharing.com/uploads/20200518/ccc9ccad5ab9aee46a8696793b4fbc317a3ed564.png" width="195" height="105">
                 </a>
 
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
+
             </div>
+            @auth
 
-            <div id="navbarBasicExample" class="navbar-menu">
-                <div class="navbar-start">
-                    @auth
-                    <a class="navbar-item" href="{{ route('user.orders') }}">
-                        Active Companions
-                    </a>
-
-                    <a class="navbar-item" href="{{ route('admin.orders') }}">
-                        Messaging Center
-                    </a>
-                    @endauth
                     <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">
-                            more
-                        </a>
+                        <a href="#" class="navbar-link" aria-haspopup="true" aria-controls="dropdown-menu3" hidden="true">
+                            {{ Auth::user()->name }} </a>
 
                         <div class="navbar-dropdown">
 
-                            <a class="navbar-item">
-                                Report An Issue
-                            </a>
-                            <hr class="navbar-divider">
-                            <a class="navbar-item">
-                                Report an issue
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="navbar-end">
-                    <div class="navbar-item">
-
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-        <nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-
-                    <!-- Collapsed Hamburger -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                        <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                    <!-- Branding Image -->
-                    <a class="navbar-brand">
-                        CompanionCloud
-                    </a>5
-                </div>
-
-                <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                        @auth
-                            <li><a href="{{ route('user.orders') }}"><i class="glyphicon glyphicon-qrcode"></i> Active Companions</a></li>
-
-                            {{-- Admin Routes --}}
-                            <li><a href="{{ route('admin.orders') }}"><i class="glyphicon glyphicon-envelope"></i> Messaging Center</a></li>
-                        @endauth
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Register</a></li>
-                        @else
-
-                            @include('partials.notifications-dropdown')
-
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>
-                                        <a href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a>
-
+                                @guest
+                                    <a href="{{ route('login') }}" class="dropdown-item">
+                                        Login
+                                    </a>
+                                    <a href="{{ route('register') }}" class="dropdown-item">
+                                        Register
+                                    </a>
+                                @else
+                                    <a class="dropdown-item">Notifications
+                                        @include('partials.notifications-dropdown')
+                                    </a>
+                                    <a href="#" class="dropdown-item">
+                                        Contact Support
+                                    </a>
+                                    <hr class="dropdown-divider">
+                                    <a href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();" class="dropdown-item">
+                                        Logout
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
-                                    </li>
-                                </ul>
-                            </li>
-                        @endguest
-                    </ul>
+                                        @endguest
+                                    </a>
+                                    </a>
+                        </div>
+                        @endauth
+                        </div>
+                    </div>
                 </div>
-            </div>
         </nav>
+
+
+
 
         @yield('content')
     </div>

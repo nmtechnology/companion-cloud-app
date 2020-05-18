@@ -16,8 +16,11 @@
   }
 }
 
-body, html {
-  background-image: url("https://imagesharing.com//photo.php?s=zsh1753v");
+html {
+  background-image: url("https://imagesharing.com/uploads/20200518/30f07fbc87a47b3d55cf9bd8b7abf8ae0282e719.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -7670,7 +7673,7 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 }
 
 .panel.is-white .panel-heading {
-  background-color: white;
+  background-color: #ffffff;
   color: #0a0a0a;
 }
 
@@ -7803,9 +7806,9 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
 .panel-block:not(:last-child) {
   border-bottom: 1px solid #ededed;
 }
-
+                                                        /*******************active companion panel header******************/
 .panel-heading {
-  background-color: #ededed;
+  background-color: #ffffff;
   border-radius: 6px 6px 0 0;
   color: #363636;
   font-size: 1.25em;
