@@ -13,6 +13,8 @@
         <!-- Styles -->
         <style>
             html, body {
+                background-image: url("https://imagesharing.com//photo.php?s=zsh1753v");
+                background-size: cover;
                 color: #444444;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
@@ -72,7 +74,7 @@
             }
         </style>
     </head>
-    <body>
+    <body src="https://imagesharing.com//photo.php?s=zsh1753v">
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">

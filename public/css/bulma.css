@@ -16,6 +16,11 @@
   }
 }
 
+body, html {
+  background-image: url("https://imagesharing.com//photo.php?s=zsh1753v");
+  background-size: cover;
+}
+
 .delete, .modal-close, .is-unselectable, .button, .file, .breadcrumb, .pagination-previous,
 .pagination-next,
 .pagination-link,
@@ -165,6 +170,7 @@
   right: 0;
   top: 0;
 }
+
 
 .button, .input, .textarea, .select select, .file-cta,
 .file-name, .pagination-previous,

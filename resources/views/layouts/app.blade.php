@@ -12,12 +12,63 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/bulma.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 <body>
     <div id="app">
+
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io">
+                    <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    @auth
+                    <a class="navbar-item" href="{{ route('user.orders') }}">
+                        Active Companions
+                    </a>
+
+                    <a class="navbar-item" href="{{ route('admin.orders') }}">
+                        Messaging Center
+                    </a>
+                    @endauth
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            more
+                        </a>
+
+                        <div class="navbar-dropdown">
+
+                            <a class="navbar-item">
+                                Report An Issue
+                            </a>
+                            <hr class="navbar-divider">
+                            <a class="navbar-item">
+                                Report an issue
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -31,9 +82,9 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'CompanionCloud') }}
-                    </a>
+                    <a class="navbar-brand">
+                        CompanionCloud
+                    </a>5
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
