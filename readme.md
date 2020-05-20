@@ -1,4 +1,4 @@
-<p align="center"><img src="https://imagesharing.com/photo.php?id=d32f8034b94a1956dedc7658fb8eef01e87f156f" height="200" width="400"></p>
+<p align="center"><img src="https://imagesharing.com/photo.php?id=d32f8034b94a1956dedc7658fb8eef01e87f156f" height="100" width="600"></p>
 
 
 
