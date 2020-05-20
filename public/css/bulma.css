@@ -25,6 +25,14 @@ html {
   background-attachment: fixed;
 }
 
+#nav-nav {
+  background-color: #2B5A8C;
+}
+
+#dropdown-color {
+  background-color: #52b8ff;
+}
+
 .delete, .modal-close, .is-unselectable, .button, .file, .breadcrumb, .pagination-previous,
 .pagination-next,
 .pagination-link,

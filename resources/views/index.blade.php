@@ -32,11 +32,11 @@
                             <thead>
                                 <tr>
                                     <th>Status</th>
-                                    <th>ID</th>
-                                    <th>Address</th>
-                                    <th>Size</th>
-                                    <th>Toppings</th>
-                                    <th>Instructions</th>
+                                    <th>APMS Refernce ID</th>
+                                    <th>Pet's Name</th>
+                                    <th>Cremation Type</th>
+                                    <th>Service Options</th>
+                                    <th>Extra Clinic Notes</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -46,10 +46,10 @@
                                                             initial=" {{ $order->status->percent }}"
                                                             order_id="{{ $order->id }}"></order-progress></td>
                                         <td><a href="{{ route('user.orders.show', $order) }}">APMS{{ $order->id }}</td>
-                                        <td>{{ $order->address }}</td>
-                                        <td>{{ $order->size }}</td>
-                                        <td>{{ $order->toppings }}</td>
-                                        <td>{{ $order->instructions }}</td>
+                                        <td>{{ $order->pet_name }}</td>
+                                        <td>{{ $order->cremation_type }}</td>
+                                        <td>{{ $order->service_options }}</td>
+                                        <td>{{ $order->extra_notes }}</td>
                                     </tr>
                                 @endforeach
                             </tbody>

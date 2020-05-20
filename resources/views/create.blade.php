@@ -4,10 +4,10 @@
     <br>
     <br>
     <br>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="panel panel-default">
+<div class="container col-lg-4">
+    <div>
+        <div class="column">
+            <div class="panel panel-default is-warning">
                 <div class="panel-heading">New Cremation</div>
 
                 <div class="panel-body">
@@ -19,53 +19,52 @@
 
                     <order-alert user_id="{{ auth()->user()->id }}"></order-alert>
 
-                    <div class="row">
-                        <div class="col-lg-12">
+                    <div class="form-control">
+                        <div class="row">
                             <form method="post" action="{{ route('user.orders.store') }}" class="form-horizontal">
                                 {{ csrf_field() }}
 
-                                <div class="form-group"><label class="col-sm-2 control-label">Owner's Name</label>
-                                    <div class="col-sm-3"><input type="text" name="owner_name" placeholder="First & Last Name" class="form-control"></div>
+                                <div class="field column">
+                                    <label class="label">Owner's Name</label>
+                                    <div class="control">
+                                        <input class="input" type="text" name="owner_name" placeholder="First & Last Name">
+                                    </div>
                                 </div>
 
-                                <div class="form-group"><label class="col-sm-2 control-label">Owner's Phone</label>
-                                    <div class="col-sm-2"><input type="text" name="owner_phone" placeholder="(555)555-5555" class="form-control"></div>
+                                <div class="field column">
+                                    <label class="label">Owner's Phone</label>
+                                    <div class="control">
+                                        <input class="input" type="text" name="owner_phone" placeholder="(555)555-5555">
+                                    </div>
                                 </div>
 
-                                <div class="form-group"><label class="col-sm-2 control-label">Companion's Name</label>
-                                    <div class="col-sm-3"><input type="text" name="pet_name" placeholder="Paco" class="form-control"></div>
+                                <div class="field column">
+                                    <label class="label">Companion's Name</label>
+                                    <div class="control">
+                                        <input class="input" type="text" name="pet_name" placeholder="Pet's Name">
+                                    </div>
                                 </div>
 
-                                <div class="form-group"><label class="col-sm-2 control-label">Color & Breed</label>
-                                    <div class="col-sm-3"><input type="text" name="color_breed" placeholder="Black Pug" class="form-control"></div>
+                                <div class="field column">
+                                    <label class="label">Color & Breed</label>
+                                    <div class="control">
+                                        <input class="input" type="text" name="color_breed" placeholder="What is the companion's coat color and breed?">
+                                    </div>
                                 </div>
 
-                                <div class="form-group"><label class="col-sm-2 control-label">Weight</label>
-                                    <div class="col-sm-6"><input type="text" name="weight" placeholder="12 lbs." class="form-control"></div>
+                                <div class="field column">
+                                    <label class="label">Weight</label>
+                                    <div class="control">
+                                        <input class="input" type="text" name="weight" placeholder="How many Lbs.?">
+                                    </div>
                                 </div>
 
-                                <div class="form-group"><label class="col-sm-2 control-label">Weight</label>
-                                    <div class="col-sm-6"><input type="text" name="weight" placeholder="12 lbs." class="form-control"></div>
-                                </div>
 
-                                <div class="form-group"><label class="col-sm-2 control-label">Weight</label>
-                                    <div class="col-sm-6"><input type="text" name="weight" placeholder="12 lbs." class="form-control"></div>
-                                </div>
-
-                                <div class="form-group"><label class="col-sm-2 control-label">Weight</label>
-                                    <div class="col-sm-6"><input type="text" name="weight" placeholder="12 lbs." class="form-control"></div>
-                                </div>
-
-                                <div class="form-group"><label class="col-sm-2 control-label">Weight</label>
-                                    <div class="col-sm-6"><input type="text" name="weight" placeholder="12 lbs." class="form-control"></div>
-                                </div>
-
-                                <div class="form-group"><label class="col-sm-2 control-label">Weight</label>
-                                    <div class="col-sm-6"><input type="text" name="weight" placeholder="12 lbs." class="form-control"></div>
-                                </div>
-
-                                <div class="form-group"><label class="col-sm-2 control-label">Return Companion To</label>
-                                    <div class="col-sm-6"><input type="text" name="return_to" placeholder="Clinic or Owner?" class="form-control"></div>
+                                <div class="field column">
+                                    <label class="label">Returning To</label>
+                                    <div class="control">
+                                        <input class="input" type="text" name="color_breed" placeholder="What is the companion's coat color and breed?">
+                                    </div>
                                 </div>
 
                                 <div class="hr-line-dashed"></div>
@@ -95,12 +94,18 @@
                                 </div>
 
                                 <div class="hr-line-dashed"></div>
-                                <div class="form-group">
-                                    <div class="col-sm-4 col-sm-offset-2">
-
-                                        <button class="btn btn-primary" type="submit">Submit</button>
-
-                                    </div>
+                                <div class="field is-grouped is-grouped-right">
+                                    <p class="control">
+                                        <a class="button is-primary">
+                                            Submit
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-light">
+                                            Cancel
+                                        </a>
+                                    </p>
+                                </div>
                                 </div>
                             </form>
 

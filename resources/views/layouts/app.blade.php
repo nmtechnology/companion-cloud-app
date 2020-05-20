@@ -21,8 +21,8 @@
 
         <nav class="navbar is-fixed-top" id="nav-nav" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item" href="https://bulma.io">
-                    <img src="https://imagesharing.com/uploads/20200518/ccc9ccad5ab9aee46a8696793b4fbc317a3ed564.png" width="195" height="105">
+                <a class="navbar-item">
+                    <img src="https://imagesharing.com/uploads/20200518/63aace498adb4eaf13509c9e2e63a1494a90b6f1.png" width="230" height="200">
                 </a>
 
 
@@ -30,10 +30,10 @@
             @auth
 
                     <div class="navbar-item has-dropdown is-hoverable navbar-end">
-                        <a href="#" class="navbar-link" aria-haspopup="true" hidden="true">
+                        <a href="#" class="navbar-link has-text-white" aria-haspopup="true" hidden="true">
                             {{ Auth::user()->name }} </a>
 
-                        <div class="navbar-dropdown">
+                        <div class="navbar-dropdown" id="dropdown-color">
 
                                 @guest
                                     <a href="{{ route('login') }}" class="dropdown-item">
