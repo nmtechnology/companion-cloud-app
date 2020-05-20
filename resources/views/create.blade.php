@@ -67,6 +67,27 @@
                                     </div>
                                 </div>
 
+                                <div class="field column">
+                                    <label class="label">Shipping Address</label>
+                                    <div class="control">
+                                        <input class="input" type="text" name="shipping_address" placeholder="Where is APMS mailing the final product to?">
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <div class="control">
+                                <div class="select is-multiple is-warning is-large" hidden="true">
+                                    <select multiple size="5">
+                                        <option value="true_privatecremation">True Private Cremation</option>
+                                        <option value="group_cremation">Group Cremation</option>
+                                        <option value="partitioned_cremation">Partitioned Cremation</option>
+                                        <option value="good_samaritan">Good Samaritan</option>
+                                        <option value="vet_clinic_pkg">Vet Clinic PKG</option>
+                                    </select>
+                                </div>
+                                    </div>
+                                </div>
+
                                 <div class="hr-line-dashed"></div>
                                 <div class="form-group"><label class="col-sm-2 control-label">Service Options</label>
                                     <div class="col-sm-10">
