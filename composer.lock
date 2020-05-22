@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "51510f5b41eeb1eff5b16cb9e753f4c3",
+    "content-hash": "5748000c79720e8c9f229e8df5b60132",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -972,6 +972,68 @@
             "time": "2020-04-29T15:06:45+00:00"
         },
         {
+            "name": "laravel/valet",
+            "version": "v2.10.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/valet.git",
+                "reference": "ea45fcc80a2496550e6f6cdfa388afea113cd319"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/valet/zipball/ea45fcc80a2496550e6f6cdfa388afea113cd319",
+                "reference": "ea45fcc80a2496550e6f6cdfa388afea113cd319",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/container": "~5.1 | ^6.0 | ^7.0",
+                "mnapoli/silly": "~1.0",
+                "nategood/httpful": "~0.2",
+                "php": ">=5.6",
+                "symfony/process": "~3.0|~4.0|~5.0",
+                "tightenco/collect": "^5.3 | ^6.0 | ^7.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.2.3",
+                "phpunit/phpunit": "~5.7"
+            },
+            "bin": [
+                "valet"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "cli/includes/compatibility.php",
+                    "cli/includes/facades.php",
+                    "cli/includes/helpers.php"
+                ],
+                "psr-4": {
+                    "Valet\\": "cli/Valet/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                },
+                {
+                    "name": "Adam Wathan",
+                    "email": "adam.wathan@gmail.com"
+                }
+            ],
+            "description": "A more enjoyable local development experience for Mac.",
+            "keywords": [
+                "laravel",
+                "wwdhhd",
+                "zonda"
+            ],
+            "time": "2020-05-07T04:08:45+00:00"
+        },
+        {
             "name": "league/commonmark",
             "version": "1.4.3",
             "source": {
@@ -1130,6 +1192,52 @@
             "time": "2020-05-18T15:13:39+00:00"
         },
         {
+            "name": "mnapoli/silly",
+            "version": "1.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mnapoli/silly.git",
+                "reference": "66807f87abd2ab8e5708754d70b4b601f5614c32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mnapoli/silly/zipball/66807f87abd2ab8e5708754d70b4b601f5614c32",
+                "reference": "66807f87abd2ab8e5708754d70b4b601f5614c32",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "php-di/invoker": "~2.0",
+                "psr/container": "^1.0",
+                "symfony/console": "~3.0|~4.0|~5.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.12",
+                "mnapoli/phpunit-easymock": "~1.0",
+                "phpunit/phpunit": "~6.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Silly\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Silly CLI micro-framework based on Symfony Console",
+            "keywords": [
+                "PSR-11",
+                "cli",
+                "console",
+                "framework",
+                "micro-framework",
+                "silly"
+            ],
+            "time": "2019-11-26T20:07:27+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "2.0.2",
             "source": {
@@ -1209,6 +1317,56 @@
                 "psr-3"
             ],
             "time": "2019-12-20T14:22:59+00:00"
+        },
+        {
+            "name": "nategood/httpful",
+            "version": "0.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nategood/httpful.git",
+                "reference": "0cded3ea97ba905600de9ceb9ef13f3ab681587c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nategood/httpful/zipball/0cded3ea97ba905600de9ceb9ef13f3ab681587c",
+                "reference": "0cded3ea97ba905600de9ceb9ef13f3ab681587c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Httpful": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nate Good",
+                    "email": "me@nategood.com",
+                    "homepage": "http://nategood.com"
+                }
+            ],
+            "description": "A Readable, Chainable, REST friendly, PHP HTTP Client",
+            "homepage": "http://github.com/nategood/httpful",
+            "keywords": [
+                "api",
+                "curl",
+                "http",
+                "requests",
+                "rest",
+                "restful"
+            ],
+            "time": "2020-01-25T01:13:13+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -1522,6 +1680,49 @@
                 "side-channel resistant"
             ],
             "time": "2020-03-20T21:48:09+00:00"
+        },
+        {
+            "name": "php-di/invoker",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHP-DI/Invoker.git",
+                "reference": "540c27c86f663e20fe39a24cd72fa76cdb21d41a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHP-DI/Invoker/zipball/540c27c86f663e20fe39a24cd72fa76cdb21d41a",
+                "reference": "540c27c86f663e20fe39a24cd72fa76cdb21d41a",
+                "shasum": ""
+            },
+            "require": {
+                "psr/container": "~1.0"
+            },
+            "require-dev": {
+                "athletic/athletic": "~0.1.8",
+                "phpunit/phpunit": "~4.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Invoker\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Generic and extensible callable invoker",
+            "homepage": "https://github.com/PHP-DI/Invoker",
+            "keywords": [
+                "callable",
+                "dependency",
+                "dependency-injection",
+                "injection",
+                "invoke",
+                "invoker"
+            ],
+            "time": "2017-03-20T19:28:22+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -3507,6 +3708,56 @@
             "time": "2020-04-12T16:45:47+00:00"
         },
         {
+            "name": "tightenco/collect",
+            "version": "v7.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tightenco/collect.git",
+                "reference": "ba504e959241f1f408867ffd03159b040f66e00b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tightenco/collect/zipball/ba504e959241f1f408867ffd03159b040f66e00b",
+                "reference": "ba504e959241f1f408867ffd03159b040f66e00b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/var-dumper": "^3.4 || ^4.0 || ^5.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "nesbot/carbon": "^2.23.0",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Collect/Support/helpers.php",
+                    "src/Collect/Support/alias.php"
+                ],
+                "psr-4": {
+                    "Tightenco\\Collect\\": "src/Collect"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                }
+            ],
+            "description": "Collect - Illuminate Collections as a separate package.",
+            "keywords": [
+                "collection",
+                "laravel"
+            ],
+            "time": "2020-05-08T22:25:37+00:00"
+        },
+        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.2",
             "source": {
@@ -4053,6 +4304,59 @@
                 "test"
             ],
             "time": "2016-01-20T08:20:44+00:00"
+        },
+        {
+            "name": "laravel/helpers",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/helpers.git",
+                "reference": "1f978fc5dad9f7f906b18242c654252615201de4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/helpers/zipball/1f978fc5dad9f7f906b18242c654252615201de4",
+                "reference": "1f978fc5dad9f7f906b18242c654252615201de4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.8.0|^6.0|^7.0",
+                "php": ">=7.1.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                },
+                {
+                    "name": "Dries Vints",
+                    "email": "dries.vints@gmail.com"
+                }
+            ],
+            "description": "Provides backwards compatibility for helpers in the latest Laravel release.",
+            "keywords": [
+                "helpers",
+                "laravel"
+            ],
+            "time": "2020-03-03T13:52:16+00:00"
         },
         {
             "name": "mockery/mockery",

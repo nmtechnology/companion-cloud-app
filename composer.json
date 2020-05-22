@@ -15,6 +15,7 @@
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.0",
+        "laravel/valet": "^2.10",
         "pusher/pusher-php-server": "~3.0"
     },
     "require-dev": {
