@@ -4,12 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Order;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class UserOrdersController extends Controller {
 	/**
 	 * Show the application dashboard.
 	 *
-	 * @return \Illuminate\Http\Response
+	 * @return Response
 	 */
 	public function index() {
 		$user = auth()->user();
@@ -21,7 +22,7 @@ class UserOrdersController extends Controller {
 	/**
 	 * Show the form for creating a new resource.
 	 *
-	 * @return \Illuminate\Http\Response
+	 * @return Response
 	 */
 	public function create() {
 		return view('create');
@@ -30,8 +31,8 @@ class UserOrdersController extends Controller {
 	/**
 	 * Store a newly created resource in storage.
 	 *
-	 * @param  \Illuminate\Http\Request  $request
-	 * @return \Illuminate\Http\Response
+	 * @param Request $request
+	 * @return Response
 	 */
 	public function store(Request $request)
 	{
@@ -55,7 +56,7 @@ class UserOrdersController extends Controller {
 	 * Display the specified resource.
 	 *
 	 * @param int $id
-	 * @return \Illuminate\Http\Response
+	 * @return Response
 	 */
 	public function show(Order $order) {
 		return view('show', compact('order'));
