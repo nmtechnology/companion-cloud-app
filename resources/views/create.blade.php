@@ -76,38 +76,60 @@
 
                                 <div class="field">
                                     <div class="control">
-                                <div class="select is-multiple is-warning is-large" hidden="true">
-                                    <select multiple size="5">
-                                        <option value="true_privatecremation">True Private Cremation</option>
-                                        <option value="group_cremation">Group Cremation</option>
-                                        <option value="partitioned_cremation">Partitioned Cremation</option>
-                                        <option value="good_samaritan">Good Samaritan</option>
-                                        <option value="vet_clinic_pkg">Vet Clinic PKG</option>
-                                    </select>
-                                </div>
+                                        <div class="select is-multiple is-warning is-large" hidden="true">
+                                            <label class="label">Cremation Type</label>
+                                            <select multiple size="5">
+                                                <option value="true_private_cremation">True Private Cremation</option>
+                                                <option value="group_cremation">Group Cremation</option>
+                                                <option value="partitioned_cremation">Partitioned Cremation</option>
+                                                <option value="good_samaritan">Good Samaritan</option>
+                                                <option value="vet_clinic_pkg">Vet Clinic PKG</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="hr-line-dashed"></div>
-                                <div class="form-group"><label class="col-sm-2 control-label">Service Options</label>
-                                    <div class="col-sm-10">
-                                        <label class="checkbox-inline">
-                                            <input type="checkbox" name="service_options[]" value="shipping&handling" id="shipping&handling"> Shipping & Handling
-                                        </label>
-                                        <label class="checkbox-inline">
-                                            <input type="checkbox" name="service_options[]" value=".70-per-lb" id=".70-per-lb"> .70/lb.
-                                        </label>
-                                        <label class="checkbox-inline">
-                                            <input type="checkbox" name="service_options[]" value="expedited-cremation" id="mushrooms"> Expedited Cremation
-                                        </label>
-                                        <label class="checkbox-inline">
-                                            <input type="checkbox" name="service_options[]" value="vds-transfer" id="vds-transfer"> VDS Transfer
-                                        </label>
-                                        <label class="checkbox-inline">
-                                            <input type="checkbox" name="service_options[]" value="witness-cremation" id="inlineCheckbox3"> Witness Cremation
-                                        </label>
+                                <div class="field column">
+                                    <label class="label">Paw Print Type</label>
+                                    <div class="control">
+                                        <input class="input" type="text" name="paw_print" placeholder="What type of PawPrint?">
                                     </div>
                                 </div>
+
+                                <div class="field column">
+                                    <label class="label">Urn Type</label>
+                                    <div class="control">
+                                        <input class="input" type="text" name="urn_type" placeholder="What type of Urn?">
+                                    </div>
+                                </div>
+
+                                <div class="field column">
+                                    <label class="label">Nameplate Type</label>
+                                    <div class="control">
+                                        <input class="input" type="text" name="nameplate_type" placeholder="What type of nameplate?">
+                                    </div>
+                                </div>
+
+                                <div class="hr-line-dashed field"></div>
+                                        <div class="form-group"><label class="col-sm-2 control-label">Service Options</label>
+                                            <div class="col-sm-10">
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox" name="service_options[]" value="shipping&handling" id="shipping&handling"> Shipping & Handling
+                                                </label>
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox" name="service_options[]" value=".70-per-lb" id=".70-per-lb"> .70/lb.
+                                                </label>
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox" name="service_options[]" value="expedited-cremation" id="expedited_cremation"> Expedited Cremation
+                                                 </label>
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox" name="service_options[]" value="vds-transfer" id="vds-transfer"> VDS Transfer
+                                                </label>
+                                                <label class="checkbox-inline">
+                                                    <input type="checkbox" name="service_options[]" value="witness-cremation" id="inlineCheckbox3"> Witness Cremation
+                                                </label>
+                                            </div>
+                                        </div>
 
                                 <div class="form-group"><label class="col-sm-2 control-label">Extra Notes</label>
 
@@ -117,24 +139,24 @@
                                 <div class="hr-line-dashed"></div>
                                 <div class="field is-grouped is-grouped-right">
                                     <p class="control">
-                                        <a class="button is-primary">
+                                        <a class="button is-primary column">
                                             Submit
                                         </a>
                                     </p>
                                     <p class="control">
-                                        <a class="button is-light">
+                                        <a class="button is-light column">
                                             Cancel
                                         </a>
                                     </p>
-                                </div></form>
                                 </div>
-                    </div>
-
-
-
+                            </form>
                         </div>
                     </div>
-                </div>
+               </div>
             </div>
+        </div>
+    </div>
+ </div>
+    </div>
         </div>
 @endsection
