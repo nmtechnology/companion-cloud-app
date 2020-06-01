@@ -15,11 +15,16 @@
         "laravel-mix": "^5.0.1",
         "lodash": "^4.17.13",
         "resolve-url-loader": "^3.1.0",
-        "sass": "^1.15.2",
+        "sass": "^1.26.7",
         "sass-loader": "^8.0.0",
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
-        "bulma": "^0.8.2"
+        "bulma": "^0.8.2",
+        "laravel-echo": "^1.8.0",
+        "pusher-js": "^6.0.3",
+        "vue": "^2.6.11",
+        "vue-strap": "^1.1.40",
+        "vue-timeago": "^5.1.2"
     }
 }
