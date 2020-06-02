@@ -9,24 +9,24 @@
                 <a class="button is-warning" href="{{ route('user.orders.create') }}"><i class="fas fa-plus"></i>Add</a>
             </div>
 
-            <div class="panel-block">
-                <p class="control has-icons-left">
-                    <input class="input is-primary" type="text" placeholder="Search">
-                    <span class="icon is-left">
-        <i class="fas fa-search" aria-hidden="true"></i>
-      </span>
-                </p>
-            </div>
-
             <p class="panel-tabs">
                 <a class="is-active">All</a>
-                <a>Public</a>
+                <a>Active Companions</a>
                 <a>Private</a>
                 <a>Sources</a>
                 <a>Forks</a>
             </p>
 
-            <div class="panel-body">
+            <div class="panel-block">
+                <p class="control has-icons-left">
+                    <input class="input is-primary" type="text" placeholder="Search">
+                    <span class="icon is-left">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    </span>
+                </p>
+            </div>
+
+            <div>
                 @if (session('message'))
                     <div class="alert alert-success">
                         {{ session('message') }}
@@ -35,13 +35,13 @@
 
                 @if ($orders->count() == 0)
                     <p>No orders yet.</p>
-                    <a class="btn btn-success is-1" href="{{ route('user.orders.create') }}">Order Pizza</a>
+                    <a class="btn btn-success is-1" href="{{ route('user.orders.create') }}">Add New Order</a>
 
                 @else
 
                     <order-alert user_id="{{ auth()->user()->id }}"></order-alert>
 
-                    <div class="table-responsive column">
+                    <div class="panel-block column">
                         <table class="table table-striped table-bordered">
                             <thead>
                             <tr>
