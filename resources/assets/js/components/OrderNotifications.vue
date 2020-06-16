@@ -11,7 +11,7 @@
                 <a :href="notification.url">
                     <div>
                         <i class="fa fa-exclamation-circle fa-fw"></i> {{ notification.description }}
-                        <span class="pull-right text-muted small"><timeago :since="notification.time" :auto-update="60"></timeago></span>
+                        <span class="pull-right text-muted small"></span>
                     </div>
                 </a>
                 <div class="divider"></div>
