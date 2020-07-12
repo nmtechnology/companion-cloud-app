@@ -6,7 +6,7 @@
     <div class="column">
         <div class="panel is-primary">
             <div class="panel-heading is-large text-primary column">
-                <a class="button is-warning" href="{{ route('user.orders.create') }}"><i class="fas fa-plus"></i>Add</a>
+                <a class="button is-success" href="{{ route('user.orders.create') }}"><i class="fas fa-plus"></i>Add</a>
             </div>
 
             <p class="panel-tabs">
