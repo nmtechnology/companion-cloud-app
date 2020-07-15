@@ -44,7 +44,7 @@
                                     </a>
                                 @else
                                     <a class="dropdown-item">Notifications
-                                        @include('partials.notifications-dropdown')
+
                                     </a>
                                     <a href="#" class="dropdown-item">
                                         Contact Support

@@ -22,21 +22,21 @@
 
                     <hr>
 
-                    <div class="order-details">
-                        <strong>Order ID:</strong> {{ $order->id }} <br>
-                        <strong>Pet's Name:</strong> {{ $order->pet_name }} <br>
-                        <strong>Cremation Type:</strong> {{ $order->cremation_type }} <br>
+                        <div class="order-details">
+                            <strong>Order ID:</strong> {{ $order->id }} <br>
+                            <strong>Size:</strong> {{ $order->size }} <br>
+                            <strong>Toppings:</strong> {{ $order->toppings }} <br>
 
-                        @if ($order->extra_notes != '')
-                            <strong>Extra Clinic Notes:</strong> {{ $order->extra_notes }}
-                        @endif
+                            @if ($order->instructions != '')
+                                <strong>Instructions:</strong> {{ $order->instructions }}
+                            @endif
 
-                    </div>
+                        </div>
 
-                    <a class="btn btn-primary" href="{{ route('user.orders') }}">Done</a>
+                        <a class="btn btn-primary" href="{{ route('user.orders') }}">Back to Orders</a>
 
                 </div> <!-- end panel-body -->
-            </div> <!-- end panel -->
+            </div>
         </div>
     </div>
 </div>

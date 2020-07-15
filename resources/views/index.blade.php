@@ -1,67 +1,83 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="column">
-    <div class="row">
-        <br>
-        <br>
-        <br>
-        <div class="column">
-            <div class="panel is-primary">
-                <div class="panel-heading is-large text-primary column">Active Companion Panel
-                <a class="button is-warning" href="{{ route('user.orders.create') }}"><i class="fas fa-plus"></i>Add</a></div>
+    <br>
+    <br>
+    <div class="column">
+        <div class="panel is-primary">
+            <div class="panel-heading is-large text-primary column">
+                <a class="button is-success" href="{{ route('user.orders.create') }}"><i class="fas fa-plus"></i>Add</a>
+            </div>
 
-                <div class="panel-block is-success">
-                    @if (session('message'))
-                        <div class="alert alert-success">
-                            {{ session('message') }}
-                        </div>
-                    @endif
+            <p class="panel-tabs">
+                <a class="is-active">All</a>
+                <a>Active Companions</a>
+                <a>Private</a>
+                <a>Sources</a>
+                <a>Forks</a>
+            </p>
+
+            <div class="panel-block">
+                <p class="control has-icons-left">
+                    <input class="input is-primary" type="text" placeholder="Search">
+                    <span class="icon is-left">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    </span>
+                </p>
+            </div>
+
+            <div>
+                @if (session('message'))
+                    <div class="alert alert-success">
+                        {{ session('message') }}
+                    </div>
+                @endif
 
                 @if ($orders->count() == 0)
-                    <p class="has-text-white">No orders yet...</p>
-                            <a class="button is-warning" href="{{ route('user.orders.create') }}"><i class="fas fa-plus"></i>Add</a></div>
+                    <p>No orders yet.</p>
+                    <a class="btn btn-success is-1" href="{{ route('user.orders.create') }}">Add New Order</a>
 
                 @else
 
                     <order-alert user_id="{{ auth()->user()->id }}"></order-alert>
 
-
-                    <div class="table-responsive">
-                        <table class="table">
+                    <div class="panel-block column">
+                        <table class="table table-striped table-bordered">
                             <thead>
-                                <tr>
-                                    <th>Status</th>
-                                    <th>APMS Refernce ID</th>
-                                    <th>Pet's Name</th>
-                                    <th>Cremation Type</th>
-                                    <th>Service Options</th>
-                                    <th>Extra Clinic Notes</th>
-                                </tr>
+                            <tr>
+                                <th>Progress</th>
+                                <th>ID</th>
+                                <th>Address</th>
+                                <th>Size</th>
+                                <th>Toppings</th>
+                                <th>Instructions</th>
+                                <th>Status</th>
+                            </tr>
                             </thead>
                             <tbody>
-                                @foreach ($orders as $order)
-                                    <tr>
-                                        <td><order-progress status="{{ $order->status->name}}"
-                                                            initial=" {{ $order->status->percent }}"
-                                                            order_id="{{ $order->id }}"></order-progress></td>
-                                        <td><a href="{{ route('user.orders.show', $order) }}">APMS{{ $order->id }}</td>
-                                        <td>{{ $order->pet_name }}</td>
-                                        <td>{{ $order->cremation_type }}</td>
-                                        <td>{{ $order->service_options }}</td>
-                                        <td>{{ $order->extra_notes }}</td>
-                                    </tr>
-                                @endforeach
+                            @foreach ($orders as $order)
+                                <tr class="panel-block">
+                                    <td>
+                                        <order-progress></order-progress>
+                                    </td>
+                                    <td>{{ $order->id }}</td>
+                                    <td>{{ $order->address }}</td>
+                                    <td>{{ $order->size }}</td>
+                                    <td>{{ $order->toppings }}</td>
+                                    <td>{{ $order->instructions }}</td>
+                                    <td><a href="{{ route('user.orders.show', $order) }}">{{ $order->status->name }}</a>
+                                    </td>
+                                </tr>
+                            @endforeach
                             </tbody>
-                            <tfoot></tfoot>
+
                         </table>
                     </div> <!-- end table-responsive -->
 
                 @endif
 
-                </div>
             </div>
         </div>
     </div>
-</div>
+    </div>
 @endsection
