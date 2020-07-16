@@ -6,15 +6,15 @@
     <div class="column">
         <div class="panel is-primary">
             <div class="panel-heading is-large text-primary column">
+                <div class="heading">Active Companion Panel</div>
                 <a class="button is-success" href="{{ route('user.orders.create') }}"><i class="fas fa-plus"></i>Add</a>
             </div>
 
             <p class="panel-tabs">
-                <a class="is-active">All</a>
-                <a>Active Companions</a>
-                <a>Private</a>
-                <a>Sources</a>
-                <a>Forks</a>
+                <a class="is-active">Active Companions</a>
+                <a>Messaging Center</a>
+                <a>Price Book</a>
+                <a>Archive</a>
             </p>
 
             <div class="panel-block">
