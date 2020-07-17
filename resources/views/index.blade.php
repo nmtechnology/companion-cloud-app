@@ -58,7 +58,7 @@
                             @foreach ($orders as $order)
                                 <tr class="panel-block">
                                     <td>
-                                        <order-progress></order-progress>
+                                        <order-progress status="{{ $order->status->name }}" initial=" {{ $order->status->percent }} " order_id="{{ $order->id }}"></order-progress>
                                     </td>
                                     <td>{{ $order->id }}</td>
                                     <td>{{ $order->address }}</td>
